@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CredOxyz</title>
+  <meta charset="utf-8">
+   <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Help for Part 2</h1>
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Lower GI</h3>
+      <a 
+href="lower gi practical/index.html">Lower GI</a>
+    </div>
+    <div class="col-sm-3">
+      <h3>Skin Tumours</h3>
+     <a 
+href="Skin Tumours/index.html">Skin Tumours</a>
+    </div>
+    <div class="col-sm-3">
+      <h3>CNS Practical</h3>        
+    <a 
+href="CNS Practical/index.html">CNS Practical</a>
+    </div>
+     <div class="col-sm-3">
+      <h3>Bone Tumours</h3>        
+    <a 
+href="Bone Tumours/index.html">Bone Tumours</a>
+    </div>
+<a 
+href="https://web.facebook.com/credoxyz/">
+<img src="https://scontent.fcmb4-1.fna.fbcdn.net/v/t1.0-9/23916069_440080886389736_834905877632210643_n.png?oh=6645f65ae71c591c216e0748cca82190&oe=5ACA8FC0" class = "thumbnail img-circle class="img-responsive" alt="Cinque Terre" width="120" height="120" "/>
+</a>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '284860388703649',
+      xfbml      : true,
+      version    : 'v2.11'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+</script>
+
+
+  </div>
+
+</div>
+
+<footer class="container-fluid text-center">
+  <p>For more help contact us on facebook <a 
+href="https://web.facebook.com/credoxyz/">CredOxyz</a></p>
+</footer>
+</body>
+</html>
